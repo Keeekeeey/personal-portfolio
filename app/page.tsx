@@ -1,10 +1,21 @@
+"use client"
+
 import Image from "next/image";
+import App from './componets/draggable'
+import { useState, useRef } from "react";
+
 
 export default function Home() {
+
+  const [isVisible, setIsVisible] = useState (false);
+
   return (
     <div className="w-full h-full">
+      {isVisible && (<App  onClose={() => setIsVisible(false)}></App>)}
       <div className="basis-1/4 border"> 
-        <button className="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">
+        <button 
+        onClick={() => {setIsVisible(true)}}
+        className="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">
           Save Changes
         </button>
       </div>
