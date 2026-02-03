@@ -4,7 +4,7 @@ export default function AboutMePage (){
 
     return(
         <div>
-            <div className="flex flex-row">
+            <div className="flex flex-row border-2 rounded p-2">
                 <div className="">
                 <header className="font-bold">My name is Kira Smith and I'm a developer seeking entry-level oppurtunites in software enginnering.</header>
                 <div className="float-left mr-4 mb-4 w-32 h-32 min-h-30 min-w-30 rounded">
@@ -29,14 +29,14 @@ export default function AboutMePage (){
                 
             </div>
             <div className="p-2 min-h-10 bg-[url(https://i.pinimg.com/1200x/04/c4/99/04c499e22cdf26db8a48f17372b04bb8.jpg)]"></div>
-            <div className="flex flex-row">
-                <div className="basis-2/3 rounded bg-foreground-02">
+            <div className="flex flex-row border-2">
+                <div className="basis-2/3 rounded bg-window-foreground">
                     <header className="font-bold items-center text-center border border-dashed p-3">
                         Skills</header>
                         <SkillsTable/>
                 </div>
                 
-                <div className="basis-1/2 rounded border border-dashed bg-foreground-02">
+                <div className="basis-1/2 rounded border border-dashed bg-window-foreground">
                     <div className="font-bold border border-dashed p-3 text-center">Companies I've worked for</div>
                     <div className="flex flex-row p-2">
                     <div className="basis-1/4"></div>
