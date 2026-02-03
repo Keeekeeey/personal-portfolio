@@ -6,13 +6,6 @@ export default function HomePage() {
 
 return (
     <div className="w-full h-full">
-      <div className="basis-1/4 border-b p-4 bg-foreground-02 grid grid-cols-2 gap-4"> 
-        <div className=" border rounded-2xl bg-background min-h-5 px-5 flex items-center"></div>
-        <button 
-        className="bg-foreground-03 rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
-          X
-        </button>
-      </div>
           <div className="basis-2/4 rounded p-2 bg-foreground-01">
               <div className="p-4 min-h-120">
                  <p className="font-bold rounded bg-foreground-02 p-2 ">If you're looking for a problem solver, look no further!</p>
@@ -30,7 +23,6 @@ return (
                     </div>
                   </div>
                   <div className="flex justify-center items-center gap-2">
-                    <WindowManager></WindowManager>
                   </div>
                   <div className="min-h-10 bg-[url(https://i.pinimg.com/1200x/04/c4/99/04c499e22cdf26db8a48f17372b04bb8.jpg)]">
                   </div>

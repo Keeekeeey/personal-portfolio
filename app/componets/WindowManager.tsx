@@ -3,6 +3,7 @@ import { useState } from 'react';
 import DraggableWindow from './DraggableWindow';
 import ProjectTable from '../pages/project-table';
 import AboutMePage from '../pages/about-me';
+import HomePage from '../pages/home-page';
 
 
 interface Window {
@@ -47,6 +48,12 @@ export default function WindowManager() {
           className="px-4 py-2 bg-foreground-02 border rounded flex flex-col items-center">
             <img className = "max-h-10 max-w-10" src='https://cdn-icons-png.flaticon.com/128/10469/10469228.png'></img>
           About Me
+        </button>
+        <button 
+          onClick={() => addWindow('/HomePage', <HomePage/>)}
+          className="px-4 py-2 bg-foreground-02 border rounded flex flex-col items-center">
+            <img className = "max-h-10 max-w-10" src='https://cdn-icons-png.flaticon.com/128/10469/10469228.png'></img>
+          Home Page
         </button>
       </div>
 
