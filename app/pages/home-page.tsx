@@ -6,11 +6,11 @@ import SkillsTable from "./about-me-skills-table";
 export default function HomePage() {
 
 return (
-    <div className="overflow-y-auto">
+    <div className="">
           <div className="basis-2/4 rounded p-2 bg-window-background ">
-              <div className="p-4 min-h-120">
+              <div className="p-1 ">
                  <p className="border font-bold bg-window-foreground p-2 lg:text-lg md:text-md">If you're looking for a problem solver, look no further!</p>
-                  <div className="border min-w-90 min-h-95">
+                  <div className="border">
                     <div className="p-2">
                       <div className=" flex float-left mr-4 mb-4 max-h-90 max-w-90 border-4 rounded">
                           <img
@@ -35,13 +35,13 @@ return (
                   </div>
                   <div className="min-h-10 bg-[url(https://i.pinimg.com/736x/49/22/b7/4922b7524905b3e25d32a8aa50133280.jpg)]">
                   </div>
-                  <div className="flex flex-row border bg-window-foreground min-h-5 p-5 px-10">
+                  <div className="flex flex-row border bg-window-foreground min-h-5 p-5 md:px-10">
                     <div className="basis-2/4 ">
                     <p className="font-bold lg:text-lg md:text-md">Sound like a fit? </p>
                     <p> Contact me at:</p>
                       </div>
                       <div className="basis-2/4 ">
-                      <div className="flex items-center gap-2 bg-foreground-0 rounded" >
+                      <div className="flex items-center gap-1 md:gap-2 bg-foreground-0 rounded py-9 md:py-0" >
                       <a href="https://github.com/Keeekeeey">
                       <button 
                         className="bg-window-foreground rounded p-2 transition delay-150 duration-300 ease-in-out hover:cursor-pointer hover:-translate-y-1 hover:scale-110 hover:bg-accent">
