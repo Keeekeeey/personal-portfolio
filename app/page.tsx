@@ -1,28 +1,30 @@
 
-import TimerWidget from "./componets/Timer";
+
 import DisplayType from "./componets/DisplayType";
+import background from "./images/portfolio_background_lowres.jpg"
+import BottomMenu from "./componets/BottomMenu";
+import TopMenu from "./componets/TopMenu";
 
 
 export default function landingPage() {
 
 return (
 
-    <div className=" border rounded w-full h-screen flex flex-col">
-      <div className="border">
-        {/* desktop outline - top */}
-        <div className="p-4 flex x-0 w-full
-              bg-linear-180 from-white to-gray-500">
-                <div className="ml-auto flex flex-row">
-                  <img className="max-h-8 max-w-8 px-1" src='https://cdn-icons-png.flaticon.com/128/3917/3917764.png'></img>
-                  <TimerWidget/>
-                </div>
-              </div>
+    <div className=" border-2 rounded w-full h-full flex flex-col">
+      <div className=" w-fill max-h-50">
+        <TopMenu/>
       </div>
-      {/* determines viewer dimentions and handles logic inside the 'screen' */}
-      <DisplayType/>
-      {/* desktop outline - bottom only renders on desktop view for ease of
-        viewing */}
-    </div>
+        <div 
+      style={{ '--bg-image': `url(${background.src})` } as React.CSSProperties}
+      className=" w-fill h-screen bg-[image:var(--bg-image)] bg-fill bg-center">
+        <DisplayType/>
+        </div>
+      <div className="block md:visible border w-fill">
+        <BottomMenu/>
+      </div>
+            
+      </div>
+
     
 
     

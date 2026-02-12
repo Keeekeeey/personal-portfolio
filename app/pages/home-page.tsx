@@ -7,7 +7,7 @@ export default function HomePage() {
 
 return (
     <div className="">
-          <div className="basis-2/4 rounded p-2 bg-window-background ">
+          <div className="basis-2/4 rounded p-2 bg-window-background md:max-w-150 ">
               <div className="p-1 ">
                  <p className="md:border font-bold bg-window-foreground p-2 lg:text-lg md:text-md">If you're looking for a problem solver, look no further!</p>
                   <div className="md:border">
